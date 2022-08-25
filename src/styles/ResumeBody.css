@@ -1,0 +1,51 @@
+body {
+  display: grid;
+  background-color: #f0f2f5;
+}
+
+.protector-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.chunk-container {
+  left: 25%;
+  width: 50%;
+
+  position: relative;
+  z-index: 1;
+}
+
+.view-mode-protector {
+  left: -25%;
+  width: 50%;
+
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+.view-mode-protector.edit {
+  z-index: -1;
+}
+
+.user-name-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-name {
+  color: white;
+}
+
+header.ant-layout-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100000000;
+  /* yes the above z-index is a hack */
+}
+
+.sidebar-open {
+  background-color: white;
+}

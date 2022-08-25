@@ -1,0 +1,25 @@
+.bpchunk_2-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hover-button-menu3 {
+  background-color: rgb(212, 211, 211);
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+}
+
+.bpchunk_2.textarea {
+  position: relative;
+  z-index: 0;
+}
+
+.bpchunk_2.textarea:hover + .hover-button-menu3,
+.hover-button-menu3:hover {
+  display: inline-block;
+}
